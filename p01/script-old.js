@@ -6,25 +6,6 @@ const password = document.getElementById('password');
 const password2 = document.getElementById('password2');
 
 // All Functions
-// Function to check if requireds fields have data
-function checkRequired(inputArray){
-    //Calling high ordered array method forEach
-    inputArray.forEach(function(input){
-        if( input.value === '' ){
-
-            // Calling Error function using Template Literals
-            showError(input,`${getFieldId(input)} is required`);
-        } else {
-            showSuccess(input);
-        }
-    })
-}
-
-// Function to get the id of the input field with proper case
-function getFieldId(input){
-    return input.id.charAt(0).toUpperCase() + input.id.slice(1);
-}
-
 // Function to show Error
 function showError(input, message) {
 
@@ -66,7 +47,37 @@ form.addEventListener ('submit', function(e){
     // Stopping the reload of form upon submit event 
     e.preventDefault();
 
-    //Calling a function using Array to check fields are not empty
-    checkRequired([username,email,password,password2]);
+    // Checking if fields are empty and display error message accordingly
+    if ( username.value === '' ) {
+        showError(username, 'Username is required');
+    } else {
+        showSuccess(username);
+    }     
+    
+    if ( email.value === '' ) {
+        showError(email, 'Email is required');
+    } else if ( !isValidEmail(email.value)) {
+        showError(email, 'Email is invalid');
+    } else {
+        showSuccess(email);
+    } 
+
+    if ( password.value === '' ) {
+        showError(password, 'Password is required');
+    } else {
+        showSuccess(password);
+    } 
+
+    if ( password2.value === '' ) {
+        showError(password2, 'Password2 is required');
+    } else {
+        showSuccess(password2);
+    } 
 
 })
+
+
+
+
+
+
