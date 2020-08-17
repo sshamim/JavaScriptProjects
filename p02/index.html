@@ -4,18 +4,103 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Seat Selection at Movie Theater</title>
+    <title>Seat Selection</title>
 </head>
 <body>
+    <div class="movie-container">
+        <label>Please select your movie</label>
+        <select id="movie">
+            <option value="15">No Time to Die ($15)</option>
+            <option value="12">Frozen II ($12)</option>
+            <option value="20">Avengers: End Game ($20)</option>
+            <option value="10">Bloodshot ($10)</option>
+            <option value="12">The Hunt ($12)</option>
+        </select>
+    </div>
 
-    2. Seat Selection at Movie Theater </br>
-        Select from movie choices and seats in a theater in order to purchase tickets </br>
-        • Display UI with movie select, screen, seats, legend & seat info </br>
-        • User can select a movie/price </br>
-        • User can select/deselect seats </br>
-        • User can not select occupied seats </br>
-        • Number of seats and price will update </br>
-        • Save seats, movie and price to local storage so that UI is still populated on refresh </br> </br>
+    <ul class="legend">
+        <li>
+            <div class="seat available"></div>
+            <small>Available</small>
+        </li>
+        <li>
+            <div class="seat reserved"></div>
+            <small>Reserved</small>
+        </li>
+        <li>
+            <div class="seat selected"></div>
+            <small>Selected</small>
+        </li>
+    </ul>
+
+    <div class="container">
+        <div class="screen"></div>
+        <div class="row">
+            <div class="seat available"></div>
+            <div class="seat available"></div>
+            <div class="seat reserved"></div>
+            <div class="seat reserved"></div>
+            <div class="seat available"></div>
+            <div class="seat available"></div>
+            <div class="seat available"></div>
+            <div class="seat available"></div>
+        </div>
+        <div class="row">
+            <div class="seat reserved"></div>
+            <div class="seat reserved"></div>
+            <div class="seat available"></div>
+            <div class="seat available"></div>
+            <div class="seat reserved"></div>
+            <div class="seat reserved"></div>
+            <div class="seat reserved"></div>
+            <div class="seat available"></div>
+        </div>
+        <div class="row">
+            <div class="seat available"></div>
+            <div class="seat reserved"></div>
+            <div class="seat reserved"></div>
+            <div class="seat reserved"></div>
+            <div class="seat reserved"></div>
+            <div class="seat available"></div>
+            <div class="seat available"></div>
+            <div class="seat available"></div>
+        </div>
+        <div class="row">
+            <div class="seat available"></div>
+            <div class="seat available"></div>
+            <div class="seat available"></div>
+            <div class="seat available"></div>
+            <div class="seat available"></div>
+            <div class="seat available"></div>
+            <div class="seat reserved"></div>
+            <div class="seat reserved"></div>
+        </div>
+        <div class="row">
+            <div class="seat available"></div>
+            <div class="seat available"></div>
+            <div class="seat available"></div>
+            <div class="seat available"></div>
+            <div class="seat available"></div>
+            <div class="seat reserved"></div>
+            <div class="seat available"></div>
+            <div class="seat available"></div>
+        </div>
+        <div class="row">
+            <div class="seat available"></div>
+            <div class="seat available"></div>
+            <div class="seat reserved"></div>
+            <div class="seat reserved"></div>
+            <div class="seat reserved"></div>
+            <div class="seat reserved"></div>
+            <div class="seat available"></div>
+            <div class="seat available"></div>
+        </div>
+    </div>
+
+    <p class="text">
+        You have selected <span id="count">0</span> seats for a total price of $<span class="total">0</span>.
+    </p>
+    
         
     <a href="../index.html">
         <button class="homebtn">Home</button>
@@ -25,9 +110,21 @@
 
 <script src="script.js"></script>
 
-
 </body>
 </html>
 
 <!-- 
--->>
+    2. Seat Selection at Movie Theater </br>
+        In this projet we'll be creaing a seat seletor UI for a movie theater. We will </br>
+        we will have a drop down picker to select a movie, a legend to display if a seat </br>
+        is vacant, selected, or already reserved. A drawing of the theater and also some </br>
+        text to display the number of seats selected by the user and the total cost of </br>
+        the tickets.
+        • Select from movie choices and seats in a theater in order to purchase tickets </br>
+        • Display UI with movie select, screen, seats, legend & seat info </br>
+        • User can select a movie/price </br>
+        • User can select/deselect seats </br>
+        • User can not select occupied seats </br>
+        • Number of seats and price will update </br>
+        • Save seats, movie and price to local storage so that UI is still populated on refresh </br> </br>
+-->
