@@ -3,30 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/progress.css">
     <title>Video Player</title>
 </head>
 <body>
-    3. Video Player </br>
-        Custom video player using the HTML5 video element and it's JavaScript API with a custom design </br>
+    <h1>Video Player</h1>
+    <video src="assets/videos/SS Fishing Video1.mp4" id="video" class="screen" poster="assets/images/poster.png"></video> 
+    <div class="controls">
+        <button id="play" class="btn" >
+            <i class="fas fa-play fa-2x"></i>
+        </button>
+        <button id="stop" class="btn">
+            <i class="fas fa-stop fa-2x"></i>
+        </button>
+
+        <!--Adding Video Slider element using Emmet abbreviation input:range -->
+        <input type="range" id="progress" class="progress" min="0" max="100" step="0.1" value="0">
+        <span id="timestamp" class="timestamp">00:00</span>
+    </div>
+
+
+  <!--  <a href="../index.html">
+        <button class="homebtn">Home</button>
+    </a>
+-->
+
+<script src="script.js"></script>
+<script src="https://kit.fontawesome.com/c0cabaa37d.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
+
+<!-- Video Player </br>
+        • Custom video player using the HTML5 video element and it's JavaScript API with a custom design </br>
         • Display custom video player styled with CSS </br>
         • Play/pause </br>
         • Stop </br>
         • Video progress bar </br>
         • Set progress bar time </br>
         • Display time in mins and seconds </br> </br>
-
-    <a href="../index.html">
-        <button class="homebtn">Home</button>
-    </a>
-
-</div>
-
-<script src="script.js"></script>
-
-
-</body>
-</html>
-
-<!-- 
--->>
+-->
