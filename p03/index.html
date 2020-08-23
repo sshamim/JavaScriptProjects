@@ -8,8 +8,16 @@
     <title>Video Player</title>
 </head>
 <body>
-    <h1>Video Player</h1>
+    <h1>SS Video Player</h1>
     <video src="assets/videos/SS Fishing Video1.mp4" id="video" class="screen" poster="assets/images/poster.png"></video> 
+    
+    <!-- Overlay text to describe the video -->
+    <div class="content">
+        <h2>Charna Island Fishing Trip - January 2020</h2>
+        <p>Angler Saqib Shamim using Trolling method to catch 8.5kg Mackerel with friends Farman and Uzair</p>
+    </div>
+       
+    
     <div class="controls">
         <button id="play" class="btn" >
             <i class="fas fa-play fa-2x"></i>
@@ -17,9 +25,34 @@
         <button id="stop" class="btn">
             <i class="fas fa-stop fa-2x"></i>
         </button>
+        <button id="fastbackward" class="btn">
+            <i class="fas fa-fast-backward fa-2x"></i>
+        </button>
+        <button id="backward" class="btn">
+            <i class="fas fa-backward fa-2x"></i>
+        </button>
+        <button id="forward" class="btn">
+            <i class="fas fa-forward fa-2x"></i>
+        </button>
+        <button id="fastforward" class="btn">
+            <i class="fas fa-fast-forward fa-2x"></i>
+        </button>
+
 
         <!--Adding Video Slider element using Emmet abbreviation input:range -->
         <input type="range" id="progress" class="progress" min="0" max="100" step="0.1" value="0">
+        
+
+        <button id="volume" class="btn">
+            <i class="fas fa-volume-up fa-2x"></i>
+        </button>
+        <!--
+        <button id="expand" class="btn">
+            <i class="fas fa-expand-alt fa-2x"></i>
+        </button>
+        ->>
+ 
+        
         <span id="timestamp" class="timestamp">00:00</span>
     </div>
 

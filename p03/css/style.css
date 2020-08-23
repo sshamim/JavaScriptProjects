@@ -16,12 +16,25 @@ body {
 }
 
 h1 {
-    color: white;
+    color: rgb(40, 5, 95);
 }
+
+.content {
+    position: fixed;
+    bottom: 70px;
+    background: rgba(0, 0, 0, 0.3);
+    color: #f1f1f1;
+    width: 70%;
+    align-content: left;
+    justify-items: left;
+    padding: 10px;
+  }
 
 .screen {
     cursor: pointer;
-    width: 60%;
+    width: 80%;
+    height: 70%;
+    object-fit: cover;
     background-color: black !important;
 }
 
@@ -31,7 +44,7 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 59%;
+    width: 79%;
     padding: 10px;
 }
 
@@ -53,11 +66,19 @@ h1 {
     color: tomato;
 }
 
-.fa-pause {
+.fa-pause, .fa-volume-up, .fa-compress-alt, .fa-expand-alt {
     color: thistle;
 }
 
-span.timestamp  {
+.fa-volume-mute {
+    color: rgb(165, 38, 7);
+}
+
+.fa-backward, .fa-fast-backward, .fa-forward, .fa-fast-forward {
+    color: rgb(46, 189, 94);
+}
+
+span.timestamp {
     color: white;
     font-weight: bold;
     margin-left: 10px;
@@ -69,4 +90,3 @@ span.timestamp  {
         width: 90%;
     }
 }
-
