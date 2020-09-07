@@ -1,0 +1,92 @@
+:root {
+  --primary-color: rgb(145, 177, 43);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(24, 16, 16);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  color: var(--primary-color);
+  text-align: center;
+}
+
+p {
+  color: white;
+  text-align: center;
+  font-size: 20px;
+}
+
+.btn {
+  cursor: pointer;
+  color: black;
+  background: var(--primary-color);
+  border: 2px solid gray;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 10px 20px;
+}
+
+
+.currency {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0px;
+}
+
+.currency select {
+  padding: 10px 10px;
+  border: 1px solid lightgray;
+  font-size: 16px;
+}
+
+.currency input {
+  border: 0;
+  background: transparent;
+  color: white;
+  font-size: 28px;
+  text-align: right;
+  width: 100px;
+}
+
+.flip-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.rate {
+  color: var(--primary-color);
+  font-size: 24px;
+  padding: 0 10px;
+}
+
+select:focus, input:focus, button:focus {
+  outline: 0;
+}
+
+.homebtn {
+  cursor: pointer;
+  background-color: gray;
+  border: 2px solid gray;
+  border-radius: 5px;
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+  margin: 5px 0px;
+  width: 100%;
+}
