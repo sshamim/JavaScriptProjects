@@ -66,12 +66,13 @@ h3 {
     font-size: 18px;
     margin-bottom: 10px;
 }
+
 .homebtn {
   cursor: pointer;
   background-color: rgb(93, 80, 80);
   border: 2px solid gray;
   color: white;
-  display: block
+  display: block;
   font-size: 20px;
   padding: 10px;
   margin-top: 20px;
