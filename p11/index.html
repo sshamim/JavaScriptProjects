@@ -1,31 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Infinite Scrolling App</title>
-</head>
-<body>
+  </head>
+  <body>
+    <h1>Blog with Infinite Scroll</h1>
 
-    11. Infinite Scrolling App</br>
+    <!-- Input field for filtering fetched posts-->
+    <div class="filter-container">
+      <input
+        type="text"
+        class="filter"
+        id="filter"
+        placeholder="Enter keyword for filter"
+      />
+    </div>
+
+    <!-- This container will hold all posts fetched from API -->
+    <div id="post-container">
+      <div class="post">
+        <div class="number">1</div>
+        <div class="post-information">
+          <h2 class="title">First Post</h2>
+          <p class="post-body">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste quis
+            sed ea at quo dolor architecto earum amet tempora, quas rem
+            doloribus dolores exercitationem illum, blanditiis, quam nostrum et
+            doloremque!
+          </p>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="number">2</div>
+        <div class="post-information">
+          <h2 class="title">Second Post</h2>
+          <p class="post-body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis natus
+            voluptas deserunt ex accusantium, minus error officiis quis nemo
+            quibusdam?
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="loader" id="loader">
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+    </div>
+
+    <div class="homebutton">
+      <a href="../index.html">
+        <button class="homebtn">Home</button>
+      </a>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
+<!-- 
+ 11. Infinite Scrolling App</br>
         Display posts from jsonplaceholder and add infinite scroll to fetch posts and also add filter box</br>
         • Create UI & custom CSS loader animation</br>
         • Fetch initial posts from API and display</br>
         • Scroll down, show loader and fetch next set of posts</br>
         • Add filtering for fetched posts</br>
-
-    <a href="../index.html">
-        <button class="homebtn">Home</button>
-    </a>
-
-</div>
-
-<script src="script.js"></script>
-
-
-</body>
-</html>
-
-<!-- 
--->>
+-->
